@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="ppb.infb.ujiantengahsemester.olahraga.Detail">
+
+    <TextView
+        android:id="@+id/viewtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="What kind of sport do you prefer : "/>
+    <TextView
+        android:id="@+id/op"
+        android:layout_below="@+id/viewtext"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/viewtext1"
+        android:layout_below="@+id/op"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Time to sport (hours)"/>
+
+    <RelativeLayout
+        android:id="@+id/console"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:layout_below="@+id/viewtext1">
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="+"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="hours"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="27dp"
+            android:layout_marginEnd="27dp"
+            android:text="-"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/proses"
+        android:layout_below="@+id/console"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Sport"/>
+
+</RelativeLayout>

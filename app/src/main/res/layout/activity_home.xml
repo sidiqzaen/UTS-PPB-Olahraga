@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="ppb.infb.ujiantengahsemester.olahraga.Home">
+
+    <ImageView
+        android:id="@+id/logoh"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:src="@drawable/logo"
+        android:paddingBottom="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnlist"
+        android:layout_below="@+id/logoh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List Sport"/>
+    <Button
+        android:id="@+id/btnabout"
+        android:layout_below="@+id/btnlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"/>
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_below="@+id/btnabout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit"/>
+
+</RelativeLayout>
